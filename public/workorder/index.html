@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vicky</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <Default></Default>
+        <div>
+            <router-view></router-view>
+        </div>
+    </div>
+
+    <template id="def">
+        <div class="container-fluid head pt-5 pb-1 ">
+            <div class="row d-flex justify-content-between">
+                <aside class="col text-uppercase">
+                    <b>deluxe</b> for business 1-800-888-6327
+                </aside>
+                <aside class="col text-right">
+
+                </aside>
+            </div>
+        </div>
+    </template>
+
+    <template id="main">
+        <main>
+            <div class="container p-5 text-muted text-justify">
+                <h3>
+                    <u>Limited Warranty</u>
+                </h3>
+                <p class="my-3">
+                    Active Appliances, Inc. (hereinafter ‘We’ or ‘Us’) provides a limited warranty on both the labor
+                    performed as well any parts used when repairing your appliance. Parts and labor warranties are
+                    rated separately and as follows:
+                </p>
+                <p>
+                    <b>Labor</b> is under warranty for thirty (30) days from the date of completion of work. You must notify
+                    us within thirty (30) days by calling our office at (818) 778-1999. Please note that the labor
+                    warranty only applies specifically to work done and does not cover labor for unrelated repairs.
+                </p>
+                <p>
+                    <b>Parts</b> used are under warranty for three (3) years from the date of installation. If any part that we
+                    install fails within three (3) years from the date of installation, we will replace the failed part at no
+                    cost for the material (may use new or reconditioned parts with exception of parts becoming
+                    obsolete). However, if the failure occurs outside of the aforementioned labor warranty, you will be
+                    responsible for the cost of the labor. An estimate for labor will be provided. You must notify us
+                    within three (3) years by calling our office at (818) 778-1999. This warranty only applies to parts
+                    supplied by Active Appliances, Inc., which are listed on the front side of this Work Order Invoice.
+                    Active Appliances, Inc., does not provide any warranty for any parts used that are not supplied by
+                    Active Appliances., Inc. Shipping fees for any large or bulky item that requires special handling
+                    will be billed to the customer on any part warranty replacement outside of ninety (90) days from
+                    the date of installation. Exceptions to this three year parts warranty include the following brands:
+                    V!king, Sub Zero, Asks, Wolf, Samsung and LG. Parts under this exception will be under warranty
+                    for ninety (90) days from the date work is completed.
+                </p>
+                <p>
+                    <b>Note:</b> The parts warranty applies only to ‘mechanical and functional’ parts. Parts that are not
+                    ‘mechanical and functional’ include, but are not limited to cosmetic parts, plastic parts, trim,
+                    buttons, knobs and switches. Active Appliances, Inc. reserves the right to determine what parts are
+                    considered ‘mechanical and functional.
+                </p>
+                <p>
+                    We offer this warranty for COD customers only (as selected on the front of this invoice under
+                    “Type of Service” field). However, if we perform work for you while you are covered by a
+                    manufacturer’s warranty, home warranty or extended warranty or any third party contact, we will
+                    extend this coverage to you as long as the following criteria are met: 1) You accept the labor
+                    estimate provided, and 2) Warranty coverage or your third party contract has expired.
+                </p>
+                <p>
+                    The aforementioned <b>Labor</b> and <b>Parts</b> warranties do not apply to any third party contracts, nor do
+                    they supersede any contractual agreement.
+                </p>
+                <p>
+                    Any damage claims must be filed within 48 hours of our visit. <br>
+                    All canceled part orders are subject to a 25% restocking fee. <br>
+                    All unpaid accounts will incur a $25 billing fee and an additional $25 fee if sent to collections. <br>
+                    Refusal to sign our invoice will constitute as a refusal of service and customer will be charged a <br>
+                    trip fee accordingly.
+                </p>
+                <h2 class="text-center my-4">
+                    Visit our website at www.ActiveAppliances.com <br>
+                    to check on the status of your job 24/7.
+                </h2>
+                <p class="small">
+                    An estimate as required (Section 9844 of the California Business and Professions Code) for repairs shall be given to the customer by the service dealer in
+                    writing, and the service dealer may not charge for work done or parts supplied in excess of the estimate without prior consent of the customer. Where
+                    provided in writing, the service dealer may charge a reasonable fee for services provided in determining the nature of the malfunction in preparation of a
+                    written estimate for repair. For information contact the Bureau of Electronic and Appliance Repair, Department of Consumer Affairs, Sacramento 95814
+                </p>
+                <div class="d-flex justify-content-end my-4">
+                    <router-link to="/" class="btn btn-secondary rounded-0 w-25 mr-3">Prev</router-link>
+                    <router-link to="/notes" class="btn btn-success rounded-0 w-25">Next</router-link>
+                </div>
+            </div>
+        </main>
+    </template>
+
+    <template id="notes">
+        <main class="notes">
+            <div class="container p-5 text-justify">
+                <section>
+                    <aside>
+                        <h2 class="text-center">NOTES:</h2>
+                        <div>
+                            <textarea rows="10" class="p-3"></textarea>
+                        </div>
+                    </aside>
+                    <aside>
+                        <h2 class="text-center mb-4">
+                            <u>Waiver</u>
+                            &mdash;
+                            <u>Release of Liability</u>
+                        </h2>
+                        <h5 class="text-center">Metal Dryer Vent Recommendation</h5>
+                        <p>
+                            <span class="ndash position-relative"></span>
+                            Active Appliance, Inc. recommends the installation of metal venting materials on all gas and electric dryers purchased from or serviced
+                            by Active Appliance, Inc., and will provide installation of metal venting materials for its standard installation fee for such service. After being
+                            duly advised by Active Appliance, Inc. that non-metal venting materials may constitute a serious fire hazard, void the manufacturer’s warranty,
+                            and/or cause the dryer to operate improperly due to decreased air flow, the CUSTOMER waives the installation of metal vent materials by
+                            Active Appliance, Inc. CUSTOMER further agrees to release, save and hold Active Appliance, Inc. harmless for any and all claims, damages,
+                            or causes of action arising out of the failure to install metal venting materials or the installation of such materials by the CUSTOMER.
+                        </p>
+                    </aside>
+                    <aside class="my-4">
+                        <h5 class="text-center">Gas and Water Connections</h5>
+                        <p>
+                            <span class="ndash position-relative"></span>
+                            The appliance that you have purchased from or had serviced by Active Appliance, Inc. requires connection to a water or gas supply. The
+                            installation of your appliance may require the removal of gas or water supply connectors. CUSTOMER agrees that Active Appliance, Inc. will
+                            not be responsible for the failure of existing valves, gas lines or plumbing. Every effort has been made to properly and safely connect the
+                            appliance to your gas or water source. It is your responsibility to timely notify Active Appliance, Inc., if any hoses, fittings, or connections
+                            develop a leak. The CUSTOMER agrees to release, save and hold Active Appliance, Inc. harmless for any and all claims, damages, or causes of
+                            action arising out of the failure of existing valves, plumbing, gas and/or water leaks found before or during appliance installation or service.
+                        </p>
+                    </aside>
+                    <aside>
+                        <h5 class="text-center">Spoilage of Foods</h5>
+                        <p>
+                            <span class="ndash position-relative"></span>
+                            Active Appliance, Inc. is not responsible for the loss or spoilage of any foods, goods or products stored within the CUSTOMER’S
+                            refrigerator or freezer. It is the CUSTOMER’S responsibility to ensure the refrigerator is at an optimal temperature before storing perishable
+                            goods in your refrigerator or freezer. Furthermore, it is CUSTOMER’S responsibility to ensure that the refrigerator or freezer is fully
+                            functioning, properly connected to a power source, and that the temperature settings are adjusted to the needs of perishable goods and/or the
+                            manufacturers recommended settings as stated in your owners/operation manual.
+                        </p>
+                    </aside>
+                    <aside class="my-4">
+                        <h5 class="text-center">Prior Damage</h5>
+                        <p>
+                            <span class="ndash position-relative"></span>
+                            Active Appliance, Inc. is not responsible for any prior damage to the subject appliance or fixture and the area surrounding the subject
+                            appliance or fixture to be serviced. CUSTOMER must recognize existing damage as a condition of service. CUSTOMER hereby acknowledges
+                            the damage listed herein:
+                            <input type="text" class="w-75 border border-right-0 border-left-0 border-top-0 border-dark my-2">
+                            <input type="text" class="w-100 border border-right-0 border-left-0 border-top-0 border-dark mb-1">
+                            <br>
+                            existed prior to any service, maintenance or repair to the subject appliances or fixtures (not all damage(s) will be listed). Refusal by
+                            CUSTOMER to sign and initial this statement prior to any service, maintenance or repair is considered a refusal of service and CUSTOMER
+                            will be charged a service fee of $
+                            <input type="number" class="dol border border-right-0 border-left-0 border-top-0 border-dark">
+                            for last minute cancellation.
+                        </p>
+                    </aside>
+                    <aside>
+                        <h5 class="text-center">General Release of Liability</h5>
+                        <p>
+                            <span class="ndash position-relative"></span>
+                            Neither Active Appliance, Inc. nor any of its authorized representatives shall be liable for any consequential or incidental damages
+                            related to services provided under this invoice.
+                        </p>
+                        <p>
+                            <b>I declare under penalty of perjury that I have read and fully understand the foregoing terms.</b>
+                            By signing this agreement, I agree to hold
+                            Active Appliance, Inc. and its agents, employees, independent contractors, and successors in interest, harmless for any and all damages or
+                            claims I may have arising out of Active Appliance, Inc. service, repair or installation of the subject appliance(s) or fixture(s) defined on front of
+                            this agreement. This contract shall be governed by and construed in accordance with the laws of the State of California. The trip and diagnostic
+                            fee is nonrefundable.
+                        </p>
+                    </aside>
+                    <aside >
+                        <h5 class="text-center mb-5">Permission to Start</h5>
+                        <div class="row d-flex justify-content-between align-items-end">
+                            <div class="col-3">
+                                <input type="text" class="w-100 border border-right-0 border-left-0 border-top-0 border-dark">
+                                <br>
+                                Castomer Name
+                            </div>
+                            <div class="col-4">
+                                <div class="border border-right-0 border-left-0 border-top-0 border-dark">
+                                    <Component :edit="edit"/>
+                                </div>
+                                Castomer Signature
+                            </div>
+                            <div class="col-2">
+                                <input type="date" class="border border-right-0 border-left-0 border-top-0 border-dark">
+                                <br>
+                                Date
+                            </div>
+                            <div class="col-3">
+                                <div class="w-100 border border-right-0 border-left-0 border-top-0 border-dark"></div>
+                                Tech's Stamp
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+                <div class="d-flex justify-content-end my-4">
+                    <button
+                            class="btn btn-outline-warning rounded-0 w-25"
+                            @click="save"
+                    >save</button>
+                    <router-link to="/info" class="btn btn-secondary rounded-0 w-25 ml-3">Prev</router-link>
+                </div>
+            </div>
+        </main>
+    </template>
+
+    <template id="appliances">
+        <div class="appliances">
+            <form>
+                <div class="container-fluid p-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class=" d-flex justify-content-between">
+                                <div class="position-relative">
+                                    <img src="logo.png" alt="" class="img-fluid" style="width: 74em">
+                                    <div class="position-absolute ord bg-white font-weight-bold">
+                                        <label>
+                                            N-
+                                            <input type="text" class="border border-top-0 border-right-0 border-left-0 border-dark">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="border border-dark col-2 px-3">
+                                    Service/Written by:
+                                </div>
+                            </div>
+                            <main class="d-flex flex-column">
+                                <section class="d-flex">
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0 justify-content-between">
+                                            <label for="nameInp">Name</label>
+                                            <input type="text" id="nameInp" class="form-control border-0 shadow-none rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0 justify-content-between">
+                                            <label for="phoneInp">Phone</label>
+                                            <input
+                                                    type="tel"
+                                                    id="phoneInp"
+                                                    class="form-control border-0 shadow-none rounded-0"
+                                                    v-model="phoneOne"
+                                                    :class="{'text-danger': !phoneOneBool}"
+                                            >
+                                        </div>
+                                    </article>
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="dateInp">Date of Purchase</label>
+                                            <input type="date" id="dateInp" class="form-control border-0 shadow-none w-50 rounded-0 text-right">
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="adddressInp">Address</label>
+                                            <input type="text" id="adddressInp" class="form-control border-0 shadow-none rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="altphoneInp">Alt. Phone</label>
+                                            <input
+                                                    type="tel"
+                                                    id="altphoneInp"
+                                                    class="form-control border-0 shadow-none rounded-0"
+                                                    v-model="phoneTwo"
+                                                    :class="{'text-danger': !phoneTwoBool}"
+                                            >
+                                        </div>
+                                    </article>
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="dateCallInp">Date Call Received</label>
+                                            <input type="date" id="dateCallInp" class="form-control border-0 shadow-none rounded-0 text-right">
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex ">
+                                    <article class="border col position-relative p-2">
+                                        <div class="row">
+                                            <aside class="col position-relative">
+                                                <div class="form-group d-flex m-0">
+                                                    <label for="cityInp">City</label>
+                                                    <input type="text" id="cityInp" class="form-control border-0 shadow-none rounded-0">
+                                                </div>
+                                            </aside>
+                                            <aside class="col position-relative">
+                                                <div class="form-group d-flex m-0">
+                                                    <label for="StateInp">State</label>
+                                                    <input type="text" id="StateInp" class="form-control border-0 shadow-none rounded-0">
+                                                </div>
+                                            </aside>
+                                            <aside class="col position-relative">
+                                                <div class="form-group d-flex m-0">
+                                                    <label for="ZIPInp">ZIP</label>
+                                                    <input type="text" id="ZIPInp" class="form-control border-0 shadow-none rounded-0">
+                                                </div>
+                                            </aside>
+                                        </div>
+                                    </article>
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="emailInp">Email</label>
+                                            <input
+                                                    type="email"
+                                                    v-model="mail"
+                                                    id="emailInp"
+                                                    class="form-control border-0 shadow-none rounded-0"
+                                                    :class="{'text-danger': !mailBool}"
+                                            >
+                                        </div>
+                                    </article>
+                                    <article class="border col position-relative p-2">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="daterepInp">Date Repaired</label>
+                                            <input type="date" id="daterepInp" class="form-control border-0 shadow-none w-50 rounded-0 text-right">.
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <div class="col border p-2">
+                                        <aside class="d-flex align-items-end">
+                                            <div class="form-group d-flex m-0 col-12 px-0">
+                                                <label for="pendingInp" class="col-5" style="font-size: 19px;">
+                                                    Pending authorization your tentative date to complete repairs is on:
+                                                </label>
+                                                <input type="date" id="pendingInp" class="text-center form-control border-top-0 shadow-none col-6 border-right-0 border-left-0 border-dark  rounded-0">
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </section>
+                                <section class="d-flex">
+                                    <div class="col border d-flex ">
+                                       <span class=" text-wrap">
+                                          Type of <br>
+                                          Service
+                                       </span>
+                                       <div class="col-10 d-flex align-items-center justify-content-around">
+                                           <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                               <label class="form-check-label" for="gridCheck1">
+                                                   COD
+                                               </label>
+                                           </div>
+                                           <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" id="gridCheck2">
+                                               <label class="form-check-label" for="gridCheck2">
+                                                   Manufacturer's Warranty
+                                               </label>
+                                           </div>
+                                           <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                               <label class="form-check-label" for="gridCheck3">
+                                                   Extended Warranty
+                                               </label>
+                                           </div>
+                                           <div class="form-check">
+                                               <input class="form-check-input" type="checkbox" id="gridCheck4">
+                                               <label class="form-check-label" for="gridCheck4">
+                                                   Home Warranty
+                                               </label>
+                                           </div>
+                                           <div class="pl-4">
+                                               Account
+                                           </div>
+                                           <div class="form-check other d-flex align-items-center">
+                                              <input class="form-check-input" type="checkbox" id="gridCheck5">
+                                              <label class="form-check-label" for="gridCheck5">
+                                                   Other
+                                              </label>
+                                              <input type="text" class="form-control border-top-0 shadow-none border-right-0 border-left-0 border-dark  rounded-0">
+                                           </div>
+                                       </div>
+                                    </div>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="provider">
+                                                <div>Warranty</div>
+                                                <div>Provider</div>
+                                            </label>
+                                            <input type="text" id="provider" class="form-control border-0 shadow-none pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="workOrder">
+                                                <div>Warranty</div>
+                                                <div>Work Order #</div>
+                                            </label>
+                                            <input type="number" id="workOrder" class="form-control border-0 shadow-none pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="auth">Warranty Authorization #</label>
+                                            <input type="number" id="auth" class="form-control border-0 shadow-none pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                </section>
+                            </main>
+
+                            <main class="d-flex flex-column my-2 parts">
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="appliance">
+                                                <div> Appliance</div>
+                                                <div>Type(1)</div>
+                                            </label>
+                                            <input type="text" id="appliance" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="make">Make</label>
+                                            <input type="text" id="make" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="model">Model</label>
+                                            <input type="number" id="model" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="serial">Serial</label>
+                                            <input type="number" id="serial" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="problem">Problem</label>
+                                            <textarea id="problem" rows="10" cols="50" class=" text_area form-control border-0 shadow-none rounded-0"></textarea>
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="service">Service Perfomed</label>
+                                            <div class="w-80">
+                                                <textarea id="service" rows="10" cols="175" class=" text_area form-control border-0 shadow-none rounded-0"></textarea>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex mth">
+                                    <article class="border text-center col-1 ths">Qty</article>
+                                    <article class="border text-center col ths">Part Number</article>
+                                    <article class="border text-center col ths">Part Description</article>
+                                    <article class="border text-center col ths">Invoice #</article>
+                                    <article class="border text-center col ths">Part Cost</article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="border text-center col-1">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="border text-center col-1">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="border text-center col-1">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="border text-center col-1">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="text" class="w-100 border-0">
+                                    </article>
+                                    <article class="border text-center col">
+                                        <input type="number" class="w-100 border-0">
+                                    </article>
+                                </section>
+                            </main>
+                            <main class="d-flex flex-column my-2 parts">
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="type2">
+                                                <div> Appliance</div>
+                                                <div>Type(2)</div>
+                                            </label>
+                                            <input type="text" id="type2" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="make2">Make</label>
+                                            <input type="text" id="make2" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="model2">Model</label>
+                                            <input type="number" id="model2" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="serial2">Serial</label>
+                                            <input type="number" id="serial2" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="problem2">Problem</label>
+                                            <textarea id="problem2" rows="10" cols="50" class=" text_area form-control border-0 shadow-none rounded-0"></textarea>
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="service2">Service Perfomed</label>
+                                            <div class="w-80">
+                                                <textarea id="service2" rows="10" cols="175" class=" text_area form-control border-0 shadow-none rounded-0"></textarea>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </section>
+                            </main>
+                            <main class="d-flex flex-column my-2 parts">
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="type3">
+                                                <div> Appliance</div>
+                                                <div>Type(3)</div>
+                                            </label>
+                                            <input type="text" id="type3" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="make3">Make</label>
+                                            <input type="text" id="make3" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="model3">Model</label>
+                                            <input type="number" id="model3" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="serial3">Serial</label>
+                                            <input type="number" id="serial3" class="form-control border-0 shadow-none w-70 pt-4 rounded-0">
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="problem3">Problem</label>
+                                            <textarea id="problem3" rows="10" cols="50" class=" text_area form-control border-0 shadow-none rounded-0"></textarea>
+                                        </div>
+                                    </article>
+                                </section>
+                                <section class="d-flex">
+                                    <article class="col border position-relative">
+                                        <div class="form-group d-flex m-0">
+                                            <label for="service3">Service Perfomed</label>
+                                            <div class="w-80">
+                                                <textarea id="service3" rows="10" cols="175" class=" text_area form-control border-0 shadow-none rounded-0"></textarea>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </section>
+                            </main>
+                            <main class="d-flex flex-column">
+                                <section class="d-flex for_last">
+                                    <article class="col border position-relative d-flex flex-column justify-content-between">
+                                        <div class="valid">COD Estimate (Valid for 30 Days)</div>
+                                        <div class="">By signing below, I agree to the estimate given.</div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <p class="m-0">
+                                            I authorize Active Appliances, Inc. to charge my credit card
+                                            (last 4 digits <input maxlength="15" type="text" class="inp">) for service provided.
+                                        </p>
+                                        <div class="d-flex gic position-relative align-items-end justify-content-between">
+                                            <!--<button @click.prevent="clear" class="x">X</button>-->
+                                            <Component :edit="edit" />
+                                        </div>
+                                    </article>
+                                    <article class="col border position-relative">
+                                        <u>
+                                            <b>
+                                                Payment Method
+                                            </b>
+                                        </u>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="paymentM1">
+                                            <label class="form-check-label" for="paymentM1">Cash</label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" id="paymentM2">
+                                            <label class="form-check-label lineOne" for="paymentM2">Check</label>
+                                            <input type="text" class="inps" maxlength="15">
+                                        </div>
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" id="paymentM3">
+                                            <label class="form-check-label lineTwo" for="paymentM3">Credit Card</label>
+                                            <input type="text" class="inps" maxlength="15">
+                                        </div>
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" id="paymentM5">
+                                            <label class="form-check-label lineThree" for="paymentM5">Not Paid</label>
+                                            <input type="text" class="inps" maxlength="15">
+                                        </div>
+                                    </article>
+                                </section>
+                            </main>
+                            <main class="d-flex flex-column ">
+                                <section class="d-flex">
+                                    <article class="col-8 d-3 border-right d-flex flex-column justify-content-between">
+                                        <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sint tempore veritatis.
+                                            Alias et fuga illum iste velit! Dolorem
+                                            in necessitatibus nihil odit perspiciatis, quae quos saepe suscipit veritatis
+                                            voluptate!
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sint tempore veritatis.
+                                            Alias et fuga illum iste velit! Dolorem
+                                            in necessitatibus nihil odit perspiciatis, quae quos saepe suscipit veritatis
+                                            voluptate!
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sint tempore veritatis.
+                                            Alias et fuga illum iste velit! Dolorem
+                                            in necessitatibus nihil odit perspiciatis, quae quos saepe suscipit veritatis
+                                            voluptate!
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sint tempore veritatis.
+                                            Alias et fuga illum iste velit! Dolorem
+                                            in necessitatibus nihil odit perspiciatis, quae quos saepe suscipit veritatis
+                                            voluptate!
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sint tempore veritatis.
+                                            Alias et fuga illum iste velit! Dolorem
+                                            in necessitatibus nihil odit perspiciatis, quae quos saepe suscipit veritatis
+                                            voluptate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sint tempore veritatis.
+                                            Alias et fuga illum iste velit! Dolorem
+                                            in necessitatibus nihil odit perspiciatis, quae quos saepe suscipit veritatis
+                                            voluptate!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sint tempore veritatis.
+                                            Alias et fuga illum iste velit! Dolorem
+                                            in necessitatibus nihil odit perspiciatis, quae quos saepe suscipit veritatis
+                                            voluptate!</p>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="col-4">
+                                                <input type="text" class="inps w-100">
+                                                <div class="text-center font-weight-bold">Sign Name</div>
+                                            </div>
+                                            <div class="col-5">
+                                                <input type="text" class="inps w-100">
+                                                <div class="text-center font-weight-bold">Print Name</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="date" class="inps w-100 text-center">
+                                                <div class="text-center font-weight-bold">Date</div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="col-4 px-0">
+                                        <table border="1" cellspacing="0" class="table m-0">
+                                            <tbody>
+                                            <tr>
+                                                <th class="border-secondary">Total Parts</th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-secondary">Sales Tax</th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-secondary">Total Labor</th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-secondary">Set Job Rate</th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-secondary">Total</th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-secondary">Trip & Diag. Fee</th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-secondary"></td>
+                                                <td class="border-secondary w-50"></td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-secondary">
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        Deductile
+                                                    </label><br>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        Deposit
+                                                    </label>
+                                                </th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="border-secondary">Balance Due</th>
+                                                <td class="border-secondary w-50">
+                                                    <input type="text" class="w-100 border-0">
+                                                </td>
+                                                <td class="border-secondary w-25"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </article>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="container-fluid d-flex justify-content-end my-4">
+                <button class="btn btn-outline-warning rounded-0 w-25" @click="save">Save</button>
+                <router-link to="/info" class="btn btn-success rounded-0 w-25 ml-3">Next</router-link>
+            </div>
+        </div>
+    </template>
+
+    <template id="customer-template">
+        <div class="w-100">
+            <div class="input-group">
+                <Signature signature-for="customerSignature" v-on:signed="saveSignature" v-model="cS" v-validate="'required'" data-vv-value-path="cS" data-vv-name="customerSignature" data-vv-as="Customer's Signature" />
+            </div>
+        </div>
+    </template>
+
+    <template id="signature-pad-template">
+        <div id="signature-pad" class="signature-pad w-100 d-flex align-items-end">
+            <button @click.prevent="clearSignature" class="x mb-2">X</button>
+            <div class="signature-pad__body">
+                <canvas name="signature" ref="canvas" v-on:mouseup="saveSignature()"></canvas>
+            </div>
+        </div>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>

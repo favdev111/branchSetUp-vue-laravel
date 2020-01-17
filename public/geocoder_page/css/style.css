@@ -1,0 +1,98 @@
+.bg-image{
+    background-image: url('background.jpg') ;
+    
+    padding-top: 55px;
+    padding-bottom: 105px;
+}
+.bg-image .p-header h2{
+    color:#fff;
+    padding-bottom: 30px;
+}
+
+.form-left h2{
+ color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+         
+}
+.form-left h5{
+    color:#fff2f2;
+    font-size: 20px;
+    font-weight: 400;
+     padding-bottom:10px;
+}
+
+.form-left adress p{
+   color:#fff2f2;
+    font-size: 15px;
+    font-weight: 300;
+     padding-bottom:10px;
+    font-style: italic;
+}
+
+.form-left ul{
+    padding-top: 20px;
+}
+
+.form-left ul li a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    color: #fff;
+    line-height: 35px;
+    font-size: 20px;
+    
+}
+.form-left ul li:first-child a{
+    background: #3b5997;
+}
+.form-left ul li:nth-child(2) a{
+    background: #40c2f4;
+}
+.form-left ul li:last-child  a{
+    background: #e44c41;
+}
+
+.fa-phone:before {
+    font-size: 20px;
+    color: #75c100;
+}
+
+.fa-map-marker:before {
+   font-size: 20px;
+    color: #ea4e4e;
+}
+.fa-user:before {
+   font-size: 20px;
+    color: #dfdfdf;
+}
+
+.copy a{
+ color: #e9eacf;
+}
+
+.p-header h2{
+    color:#4e525d;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 62px;
+    font-weight: 400;
+    
+}
+
+.my-label{
+    padding-top: 7px !important;
+    padding-left: 35px !important;
+}
+
+.list-group{
+    /*flex-direction: row !important;*/
+    flex-direction: column !important;
+}
+

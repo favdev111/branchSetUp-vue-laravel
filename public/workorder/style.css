@@ -1,0 +1,123 @@
+
+*{
+    outline: none !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.head{
+    border-bottom: 1px dashed grey;
+}
+.notes textarea {
+    width: 100%;
+    resize: none;
+}
+.notes .ndash {
+    margin-right: 4em;
+}
+.notes .ndash::after {
+    content: "";
+    border-bottom: 1px solid black;
+    position: absolute;
+    width: 4em;
+    bottom: 0;
+}
+.notes .dol {
+    width: 5em;
+}
+.notes .dol::-webkit-inner-spin-button,
+.notes .dol::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.appliances .text_area{
+    max-width: 100%;
+    max-height: 100px;
+    min-width: 90%;
+    min-height: 100px;
+    resize: none;
+}
+.appliances .ths{
+    height: 100%;
+    padding: 1em;
+    font-weight: bold;
+}
+.appliances .valid{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 17px;
+    width: 262px;
+}
+.x{
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.appliances .gic::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 1.8em;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+.appliances .inp{
+    border:0;
+    border-bottom: 1px solid black;
+    width: 8em;
+    text-indent: 10px;
+}
+.appliances .inps{
+    border: 0;
+    border-bottom: 1px solid black;
+    text-indent: 10px;
+}
+.appliances .table {
+    width: 100%;
+}
+
+.appliances main, .mth {
+    border: 2px solid black !important;
+}
+.appliances input[type=number]::-webkit-inner-spin-button,
+.appliances input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.appliances .mth>article:not(:last-child){
+    border-right: 2px solid black !important;
+}
+
+.appliances .ord {
+    right: 0;
+    bottom: 0;
+    height: 65px;
+}
+.appliances .ord>label {
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+label.checkbox {
+    display: inline-block;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.signature-pad {
+    position: relative;
+}
+
+.signature-pad__body canvas:active, .signature-pad__body canvas:hover {
+    cursor: pointer;
+}
